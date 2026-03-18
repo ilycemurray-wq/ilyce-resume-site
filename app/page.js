@@ -313,7 +313,14 @@ export default function IlyceResumeWebsite() {
                     {job.dates}
                   </div>
                 </div>
-                <div className="mt-4 text-sm font-medium text-[#8a7f73] group-open:hidden">View details</div>
+                <>
+  <div className="mt-4 text-sm font-medium text-[#8a7f73] group-open:hidden">
+    View details
+  </div>
+  <div className="mt-4 hidden text-sm font-medium text-[#8a7f73] group-open:block">
+    Hide details
+  </div>
+</>
               </summary>
               <ul className="mt-6 space-y-3 border-t border-[#efe6da] pt-6 text-sm leading-7 text-[#5f564b]">
                 {job.bullets.map((bullet) => (
