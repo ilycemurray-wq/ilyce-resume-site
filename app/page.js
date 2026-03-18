@@ -313,7 +313,7 @@ export default function IlyceResumeWebsite() {
                     {job.dates}
                   </div>
                 </div>
-                <div className="mt-4 text-sm font-medium text-[#8a7f73] group-open:hidden">Tap to expand</div>
+                <div className="mt-4 text-sm font-medium text-[#8a7f73] group-open:hidden">View details</div>
               </summary>
               <ul className="mt-6 space-y-3 border-t border-[#efe6da] pt-6 text-sm leading-7 text-[#5f564b]">
                 {job.bullets.map((bullet) => (
@@ -376,11 +376,25 @@ export default function IlyceResumeWebsite() {
           <p className="mt-3 text-sm leading-7 text-[#6b6257]">
             Open to leadership opportunities in HR risk, compliance, governance, and operations.
           </p>
-          <div className="mt-6 flex flex-col items-center gap-3 text-sm text-[#4d443a]">
-            <a className="hover:text-[#8b6b2e]" href="mailto:ilycemurray@gmail.com">ilycemurray@gmail.com</a>
-            <a className="hover:text-[#8b6b2e]" href="https://www.linkedin.com/in/ilycemurray" target="_blank" rel="noreferrer">linkedin.com/in/ilycemurray</a>
-            <p>Denton, TX</p>
-          </div>
+          <div className="mt-6 grid gap-3 text-sm text-[#4d443a] sm:grid-cols-3">
+  <a
+    className="rounded-2xl border border-[#efe6da] bg-[#fcfaf7] px-4 py-3 text-center hover:text-[#8b6b2e]"
+    href="mailto:ilycemurray@gmail.com"
+  >
+    ilycemurray@gmail.com
+  </a>
+  <a
+    className="rounded-2xl border border-[#efe6da] bg-[#fcfaf7] px-4 py-3 text-center hover:text-[#8b6b2e]"
+    href="https://www.linkedin.com/in/ilycemurray"
+    target="_blank"
+    rel="noreferrer"
+  >
+    LinkedIn Profile
+  </a>
+  <div className="rounded-2xl border border-[#efe6da] bg-[#fcfaf7] px-4 py-3 text-center">
+    Denton, TX
+  </div>
+</div>
         </div>
       </section>
     </div>
